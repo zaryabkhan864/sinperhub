@@ -93,9 +93,9 @@ const SmartLeftSidebar = () => {
                                         <p className='sub-heading'>{items.date}</p>
                                     </div>
                                     <div>
-                                        <div className='text-end h-25 '>
+                                        <div className='text-end h-25 mb-2'  style={{"cursor":"pointer"}}>
 
-                                            <p>X</p>
+                                        <img src="/assets/images/cross.png" className="img-fluid" alt="..." />
                                         </div>
                                         {/* <div className='border rounded-3 h-75 w-100 '>
                                             <div className='mb-2 px-4'>${items.floorPer}-</div>

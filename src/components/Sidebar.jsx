@@ -55,7 +55,11 @@ const bottomRoutes = [
     name: "Support",
     icon: <BiSupport />,
   },
-
+  {
+    path: "/home",
+    name: "Support",
+    icon: <BiSupport />,
+  },
 
 
 ];

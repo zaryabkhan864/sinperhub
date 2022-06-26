@@ -24,7 +24,7 @@ const Navbar = () => {
                         {/* <i className="fa-solid fa-wallet "></i> */}
 
                         <div className="d-flex text-dark ms-3">
-                            <div className='me-2'>
+                            <div className='me-2' style={{"cursor":"pointer"}}>
                                 <img src="/assets/images/profile_image.png" class="img-fluid rounded-start" alt="..." />
                             </div>
                             <div className='text-start'>

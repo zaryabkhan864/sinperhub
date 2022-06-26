@@ -85,7 +85,7 @@ const Inventory = () => {
     }
     return (
         <React.Fragment>
-            <div id="inventory" className="container mb-5 mt-5 py-1 ">
+            <div id="inventory" className="container-fluid mb-5 mt-5 py-1 ">
                 <div className="row mb-5">
                     {/* <div className="col-12">
         <h1><span className='black-text'>Top</span><span className='blue-text'> Collection</span></h1>
@@ -168,7 +168,7 @@ const Inventory = () => {
                     </div>
                  
 
-                    <div className="col-12 my-5 d-none d-lg-block">
+                    <div className="col-12 my-5 pt-sm-5">
                     <div className="row ">
                             <div className="col-12"><h3>Rare Land NFT</h3></div>
                             <div className="col-12"><span>Welcome to Rare Land. Rare Land NFTs are the gateway to unlock our music game with 100+ songs and battle</span></div>

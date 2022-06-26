@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className="col-12 px-0 ">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
               <div className="container-fluid">
-                <div>
+                <div class="d-flex align-item-middle">
                   <a className="navbar-brand " href="#">
                     <img className='img-fluid w-100 h-100 d-none d-lg-block ' src="/assets/images/SnipeHub.png" alt="" />
                     <img className='img-fluid w-100 h-100 d-lg-none d-sm-block ' src="/assets/images/blooper.png" alt="" />
@@ -30,7 +30,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse   " id="navbarNavDropdown">
 
                   <button className="btn btn-outline-primary me-1 blue-button-outline mx-auto py-2 px-4" type="submit"  onClick={goToNextPage}>Sign Up</button>
-                  <button className="btn btn-primary ms-1 blue-button text-white py-2 px-4" type="submit"><i className="fa-solid fa-wallet"></i> Connect Wallet</button>
+                  <button className="btn btn-primary ms-1 blue-button text-white " type="submit"><img src="/assets/images/simplewallet.png" className='img-fluid'/> Connect Wallet</button>
             
 
 

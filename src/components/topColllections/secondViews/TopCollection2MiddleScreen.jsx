@@ -94,13 +94,13 @@ const goToInventory = () => {
 
     return (
         <React.Fragment>
-            <div id="topcollection2" className="container mb-5 mt-5  bg-white">
+            <div id="topcollection2" className="container-fluid mb-5 mt-5  bg-white">
                 <div className="row  p-5">
-                    <div className="col-5">
+                    <div className="col-lg-5 col-md-12 col-sm-12 col-12">
                         {/* here i have to put image */}
                         <img src="/assets/images/TopCollectionBigImage.png" className="card-img img-fluid   " onClick={goToInventory} alt="..." />
                     </div>
-                    <div className="col-7">
+                    <div className="col-lg-7 col-md-12 col-sm-12 col-12">
                         <div className="row">
                             <div className="col-12">
                                 <p className='blue-heading'>!denzadol</p>
@@ -109,9 +109,9 @@ const goToInventory = () => {
                         </div>
                         <div className="row">
                             <div className="col-12">
-                                <div className="row">
-                                    <div className="col-6 p-2">
-                                        <div class="grey-card card py-3 " style={{ "maxWidth": 18 + 'rem' }}>
+                                <div className="row d-flex justify-content-center">
+                                    <div className="col-lg-6 col-md-6 col-sm-6 col-12 p-2">
+                                        <div class="grey-card card py-3 " >
                                             <div class="heading d-flex justify-content-between"><span className='ps-3'>Floor Price</span><span className='pe-3'> <img src="/assets/images/focus.png" className="img-fluid   " alt="..." /></span></div>
                                             <div class="card-body text-secondary text-start sub-heading">
                                                 <h5 class="card-title">Ξ 0.999</h5>
@@ -120,8 +120,8 @@ const goToInventory = () => {
                                         </div>
                                     </div>
                                 
-                                    <div className="col-6 p-2">
-                                        <div class="grey-card card py-3 " style={{ "maxWidth": 18 + 'rem' }}>
+                                    <div className="col-lg-6 col-md-6 col-sm-6 col-12 p-2">
+                                        <div class="grey-card card py-3 ">
                                             <div class="heading d-flex justify-content-between"><span className='ps-3'>Listing price</span><span className='pe-3'> <img src="/assets/images/focus.png" className="img-fluid   " alt="..." /></span></div>
                                             <div class="card-body text-secondary text-start sub-heading">
                                                 <h5 class="card-title">Ξ 0.999</h5>
@@ -129,8 +129,8 @@ const goToInventory = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-6 p-2">
-                                        <div class="grey-card card py-3 " style={{ "maxWidth": 18 + 'rem' }}>
+                                    <div className="col-lg-6 col-md-6 col-sm-6 col-12 p-2">
+                                        <div class="grey-card card py-3 ">
                                             <div class="heading d-flex justify-content-between"><span className='ps-3'>Rarity Rank & Score</span><span className='pe-3'> <img src="/assets/images/focus.png" className="img-fluid   " alt="..." /></span></div>
                                             <div class="card-body text-secondary text-start sub-heading">
                                                 <h5 class="card-title"><span>Rank</span><span><span>238/1.02K</span></span><span>$890</span></h5>
@@ -138,8 +138,8 @@ const goToInventory = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-6 p-2">
-                                        <div class="grey-card card py-3 " style={{ "maxWidth": 18 + 'rem' }}>
+                                    <div className="col-lg-6 col-md-6 col-sm-6 col-12 p-2">
+                                        <div class="grey-card card py-3 ">
                                             <div class="heading d-flex justify-content-between"><span className='ps-3'>Average sales price</span><span className='pe-3'> <img src="/assets/images/focus.png" className="img-fluid   " alt="..." /></span></div>
                                             <div class="card-body text-secondary text-start sub-heading">
                                                 <h5 class="card-title">+40%</h5>
@@ -147,100 +147,111 @@ const goToInventory = () => {
                                             </div>
                                         </div>
                                     </div>
+                                 
                                 </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <div className="row">
+                <div className="row ">
                     <div className="col-12 text-start">
                         <h3>Traits</h3>
                     </div>
-                    <div className="col-4 mb-3">
-                        <div class="blue-card card py-3 " style={{ "maxWidth": 18 + 'rem' }}>
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="blue-card card py-3 " >
                             <div class="heading">Background</div>
                             <div class="card-body text-secondary">
                                 <h5 class="card-title">Heavan</h5>
-                                <p class="card-text">6% Have This Trait</p>
+                                <p class="card-text footer-details justify-content-center">6% Have This Trait</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-4 mb-3">
-                        <div class="blue-card card py-3 " style={{ "maxWidth": 18 + 'rem' }}>
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="blue-card card py-3 " >
                             <div class="heading">Background</div>
                             <div class="card-body text-secondary">
                                 <h5 class="card-title">Heavan</h5>
-                                <p class="card-text">6% Have This Trait</p>
+                                <p class="card-text footer-details justify-content-center">6% Have This Trait</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-4 mb-3">
-                        <div class="blue-card card py-3 " style={{ "maxWidth": 18 + 'rem' }}>
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="blue-card card py-3 " >
                             <div class="heading">Background</div>
                             <div class="card-body text-secondary">
                                 <h5 class="card-title">Heavan</h5>
-                                <p class="card-text">6% Have This Trait</p>
+                                <p class="card-text footer-details justify-content-center">6% Have This Trait</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-4 mb-3">
-                        <div class="blue-card card py-3 " style={{ "maxWidth": 18 + 'rem' }}>
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="blue-card card py-3 " >
                             <div class="heading">Background</div>
                             <div class="card-body text-secondary">
                                 <h5 class="card-title">Heavan</h5>
-                                <p class="card-text">6% Have This Trait</p>
+                                <p class="card-text footer-details justify-content-center">6% Have This Trait</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-4 mb-3">
-                        <div class="blue-card card py-3 " style={{ "maxWidth": 18 + 'rem' }}>
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="blue-card card py-3 " >
                             <div class="heading">Background</div>
                             <div class="card-body text-secondary">
                                 <h5 class="card-title">Heavan</h5>
-                                <p class="card-text">6% Have This Trait</p>
+                                <p class="card-text footer-details justify-content-center">6% Have This Trait</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-4 mb-3">
-                        <div class="blue-card card py-3 " style={{ "maxWidth": 18 + 'rem' }}>
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="blue-card card py-3 " >
                             <div class="heading">Background</div>
                             <div class="card-body text-secondary">
                                 <h5 class="card-title">Heavan</h5>
-                                <p class="card-text">6% Have This Trait</p>
+                                <p class="card-text footer-details justify-content-center">6% Have This Trait</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-4 mb-3">
-                        <div class="blue-card card py-3 " style={{ "maxWidth": 18 + 'rem' }}>
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="blue-card card py-3 " >
                             <div class="heading">Background</div>
                             <div class="card-body text-secondary">
                                 <h5 class="card-title">Heavan</h5>
-                                <p class="card-text">6% Have This Trait</p>
+                                <p class="card-text footer-details justify-content-center">6% Have This Trait</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-4 mb-3">
-                        <div class="blue-card card py-3 " style={{ "maxWidth": 18 + 'rem' }}>
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="blue-card card py-3 " >
                             <div class="heading">Background</div>
                             <div class="card-body text-secondary">
                                 <h5 class="card-title">Heavan</h5>
-                                <p class="card-text">6% Have This Trait</p>
+                                <p class="card-text footer-details justify-content-center">6% Have This Trait</p>
                             </div>
                         </div>
                     </div>
-                    <div className="col-4 mb-3">
-                        <div class="blue-card card py-3 " style={{ "maxWidth": 18 + 'rem' }}>
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="blue-card card py-3 " >
                             <div class="heading">Background</div>
                             <div class="card-body text-secondary">
                                 <h5 class="card-title">Heavan</h5>
-                                <p class="card-text">6% Have This Trait</p>
+                                <p class="card-text footer-details justify-content-center">6% Have This Trait</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-6 mb-3">
+                        <div class="blue-card card py-3 " >
+                            <div class="heading">Background</div>
+                            <div class="card-body text-secondary">
+                                <h5 class="card-title">Heavan</h5>
+                                <p class="card-text footer-details justify-content-center">6% Have This Trait</p>
                             </div>
                         </div>
                     </div>
 
 
                 </div>
+                
                 {/* <div className="row mb-5 bg-white ">
                     <div className="col-12 mt-5  d-none d-lg-block  mb-5 middle-screen-resize">
                         <div className="row d-flex justify-content-center h-100">

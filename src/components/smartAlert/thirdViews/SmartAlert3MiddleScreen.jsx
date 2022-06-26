@@ -87,9 +87,9 @@ const SmartAlert3MiddleScreen = () => {
 
     return (
         <React.Fragment>
-            <div id="smart-alert-collection3" className="container mb-5 mt-5 py-1 ">
-                <div className="row mb-5 bg-white ">
-                    <div className="col-12 mt-5  d-none d-lg-block  mb-5 middle-screen-resize">
+            <div id="smart-alert-collection3" className="container-fluid mb-5 mt-5 py-1 ">
+                <div className="row mb-5 bg-white d-flex justify-content-center">
+                    <div className="col-12 mt-5   mb-5 middle-screen-resize">
                         <div className="row d-flex justify-content-center h-100">
                             <div className="col-8 ">
                                 <h2>Set Target Price Alert Loaded Lions $200</h2>
@@ -100,7 +100,7 @@ const SmartAlert3MiddleScreen = () => {
                                 <h5>Floor Price</h5>
                                 <input class="form-control mx-auto mb-4" type="text" placeholder="$ 150" aria-label="default input example"></input>
                                 
-                                <button class="btn blue-button" type="button" onClick={goToPrice}>Set Target Floor Price</button>
+                                <button class="btn blue-button" type="button" >Set Target Floor Price</button>
                                
                                 </div>
                               

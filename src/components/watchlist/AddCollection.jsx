@@ -110,8 +110,8 @@ const AddCollection = () => {
 
         </div>
     </div> */}
-            <div className="col-6 text-start"><h3>Select NFT Collection</h3></div>
-            <div className="col-6">
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12 text-start mt-5"><h3>Add Collections</h3></div>
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="form-group has-search">
     <span class="fa fa-search form-control-feedback"></span>
     <input type="text" class="form-control" placeholder="Search"/>
@@ -151,7 +151,7 @@ const AddCollection = () => {
 
                 </div>
             </div>
-            <div className="col-12">
+            <div className="col-12 d-none d-lg-block">
                 <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center">
                         <li class="page-item disabled">
@@ -167,15 +167,15 @@ const AddCollection = () => {
                 </nav>
             </div>
             {/* this componet is for mobile screen -- tag on */}
-            <div className="col-12 d-lg-none d-sm-block">
+            {/* <div className="col-12 d-lg-none d-sm-block">
                 <div className="row ">
-                    <div className="col-6">Top Collection</div>
-                    <div className="col-6">
+                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">Top Collection</div>
+                    <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                         <button className="btn btn-primary ms-1 blue-button  rounded-circle" type="submit"><i className="fa-solid fa-wallet"></i></button>
                         <button className="btn btn-primary ms-1 blue-button  rounded-circle" type="submit"><i className="fa-solid fa-wallet"></i></button>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className="col-12 my-5 d-lg-none d-sm-block">
                 <div className="row">

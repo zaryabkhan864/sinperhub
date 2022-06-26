@@ -16,7 +16,7 @@ const MainLayout = () => {
             <Outlet />
         </div>
    </div> */}
-   <div style={{display:'flex',flexDirection:'row'}}>
+   <div className="layout">
      <div className='d-none d-lg-block '>
      <SideBar /> 
      </div>
@@ -31,12 +31,13 @@ const MainLayout = () => {
          <div className='col-lg-9 col-md-12 col-sm-12 col-12'>
            <Outlet/>
          </div>
-         <div className='col-3 d-none d-lg-block'>
+         <div className='col-3 d-none d-lg-block grey-bg'>
            <SmartLeftSidebar/>
          </div>
        </div>
      </div>
    </div>
+
     </React.Fragment>
   )
 }

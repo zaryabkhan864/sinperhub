@@ -84,11 +84,11 @@ const Collections = () => {
             <div id="smart-alert-collection" className="container my-3 py-1 ">
                 <div className="row mb-5">
 
-                    <div className="col-lg-6 col-md-12 col-sm-12 col-12 text-start">
+                    <div className="col-lg-6 col-md-12 col-sm-12 col-12 text-start mt-lg-0 mt-sm-5">
                         <h3>Select NFT Collection</h3>
                     </div>
                     <div className="col-lg-6 col-md-12 col-sm-12 col-12 d-flex justify-lg-content-end justify-md-content-start justify-sm-content-start">
-                        <div class="form-group has-search w-75">
+                        <div class="form-group has-search custom-search-bar">
                             <span class="fa fa-search form-control-feedback"></span>
                             <input type="text" class="form-control" placeholder="Search" />
                         </div>
@@ -153,10 +153,11 @@ const Collections = () => {
                     </div> */}
 
                     <div className="col-12 my-5 d-lg-none d-sm-block">
-                        <div className="row">
+                      
+                            <div className="row">
                             {topCollectionssmall && topCollectionssmall?.map((items, key) => (
                                 <div key={key} className="col-4 my-2">
-                                    <div className="card p-2 " >
+                                    <div className="card p-2 " onClick={(e) => { goToNextPage(e.target.value) }} >
                                         <img src={items.image} className="card-img-top img-fluid" alt="..." />
                                         <div className="card-body p-0">
                                             <p className="card-text">{items.name}</p>
@@ -165,8 +166,8 @@ const Collections = () => {
 
                                 </div>
                             ))}
-
-                        </div>
+                            </div>
+                       
                     </div>
                     {/* this componet is for mobile screen -- tag off */}
                 </div>

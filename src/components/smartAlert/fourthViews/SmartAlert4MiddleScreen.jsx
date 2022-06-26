@@ -3,6 +3,7 @@ import { Navigate, useNavigate } from 'react-router-dom'
 
 const SmartAlert4MiddleScreen = () => {
     const navigate = useNavigate();
+    const [count, setCount] = useState(0);
     const topCollection = [
         { "id": "1", "image": "/assets/images/rcartoon1.png", "name": "Looneycorns", "floor": "2000.4", "floorPer": "6.12", "volume": "38K", "volumePer": "72.68" },
         { "id": "2", "image": "/assets/images/rcartoon2.png", "name": "Looneycorns", "floor": "2000.4", "floorPer": "6.12", "volume": "38K", "volumePer": "72.68" },
@@ -85,11 +86,12 @@ const SmartAlert4MiddleScreen = () => {
         // navigate('/editcategory')
     }
 
+
     return (
         <React.Fragment>
-            <div id="smart-alert-collection4" className="container mb-5 mt-5 py-1 ">
-                <div className="row mb-5 bg-white ">
-                    <div className="col-12 mt-5  d-none d-lg-block  mb-5 middle-screen-resize">
+            <div id="smart-alert-collection4" className="container-fluid mb-5 mt-5 py-1 ">
+                <div className="row mb-5 bg-white d-flex justify-content-center">
+                    <div className="col-12 mt-5  mb-5 middle-screen-resize">
                         <div className="row d-flex justify-content-center h-100">
                             <div className="col-7 ">
                                 <div className='mb-3'>
@@ -98,19 +100,19 @@ const SmartAlert4MiddleScreen = () => {
                                 <span >Set Target Floor movement</span>
                                 </div>
                               
-                                <div className=' box pt-5 mx-auto'>
+                                <div className=' box pt-5 mx-auto position-realtive'>
                                 <div className='d-flex d-flex justify-content-center mb-3 pt-2'>
-                                    <div ><p className='percentage'>%</p></div>
-                                    <div><input class="rectangle " type="text" placeholder="" aria-label=".form-control-lg example"/></div>
+                                    <div className='pt-1 me-1'><p className='percentage'>%</p></div>
+                                    <div><input class="rectangle text-center" type="text" placeholder="" aria-label=".form-control-lg example" value={count}/></div>
                                     <div className=''>
-                                        <div className=' small-button position-relative'><span>+</span></div>
+                                        <div className=' small-button position-relative'><span  onClick={() => setCount(count + 1)}>+</span></div>
                                         <hr/>
-                                        <div className=' small-button position-relative'><span>-</span></div>
+                                        <div className=' small-button position-relative'><span  onClick={() => setCount(count - 1)}>-</span></div>
                                         </div>
                                 </div>
                                 
 
-                                <button class="btn blue-button" type="button" onClick={goToPrice}>Set Alart</button>
+                                <button class="btn blue-button" type="button">Set Alert</button>
                                 </div>
                      
                              

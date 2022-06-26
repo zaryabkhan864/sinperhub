@@ -89,9 +89,9 @@ const SmartAlert2MiddleScreen = () => {
 
     return (
         <React.Fragment>
-            <div id="smart-alert-collection2" className="container mb-5 mt-5 py-1 ">
-                <div className="row mb-5 bg-white ">
-                    <div className="col-12 mt-5  d-none d-lg-block  mb-5 middle-screen-resize">
+            <div id="smart-alert-collection2" className="container-fluid mb-5 mt-5 py-1 ">
+                <div className="row mb-5 bg-white d-flex justify-content-center">
+                    <div className="col-12 mt-5   mb-5 middle-screen-resize">
                         <div className="row d-flex justify-content-center h-100">
                             <div className="col-6 ">
                                 <h2>Loaded Lions Floor Price Alert</h2>

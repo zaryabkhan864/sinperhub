@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Navigate, useNavigate } from 'react-router-dom'
 
 const Collections = () => {
-    const [blue,setBlue]= useState(1)
+    const [blue, setBlue] = useState(1)
     const navigate = useNavigate();
     const topCollection = [
         { "id": "1", "image": "/assets/images/rcartoon1.png", "name": "Looneycorns", "floor": "2000.4", "floorPer": "6.12", "volume": "38K", "volumePer": "72.68" },
@@ -112,14 +112,14 @@ const Collections = () => {
 
                 </div>
             </div> */}
-                    <div className="col-6 text-start"><h3>Top Collection</h3></div>
+                    <div className="col-lg-6 col-md-12 col-sm-12 col-12 text-start pt-lg-0 pt-sm-5"><h3>Top Collection</h3></div>
                     {/* <div className="col-6">
                         <form class="d-flex justify-content-end">
                             <input class="form-control me-2 w-50" type="search" placeholder="Search" aria-label="Search" />
 
                         </form></div> */}
 
-<div className="col-6 d-none d-lg-block">
+                    <div className="col-lg-6 col-md-12 col-sm-12 col-12 text-sm-start">
                         <div class="btn-group border p-1 rounded" role="group" aria-label="Basic radio toggle button group">
                             <input type="radio" class="btn-check" name="btnradio" id="btnradio1" value="1" checked={blue == 1} onClick={today} />
                             <label class="btn btn-outline-primary" for="btnradio1">Today</label>
@@ -133,15 +133,15 @@ const Collections = () => {
                     </div>
 
                     <div className="col-12 mt-5  d-none d-lg-block  mb-5">
-                        <div className="row d-flex justify-content-center">
+                        <div className="row d-flex justify-content-center ">
                             {topCollections && topCollections?.map((items, key) => (
-                                <div key={key} className="col-lg-6 col-md-6  " value={items.id} onClick={(e) => { goToNextPage(e.target.value) }}>
+                                <div key={key} className="col-lg-6 col-md-6  " value={items.id} >
                                     <div className="border-bottom mb-3  bg-light rounded p-3" >
-                                        <div className="row g-0 ">
-                                            <div className="col-md-4">
+                                        <div className="row g-0 " >
+                                            <div className="col-md-4 " onClick={(e) => { goToNextPage(e.target.value) }}  >
                                                 <img src={items.image} className="rounded-start img-fluid" alt="..." />
                                             </div>
-                                            <div className="col-md-8 text-start">
+                                            <div className="col-md-8 text-start" onClick={(e) => { goToNextPage(e.target.value) }}>
                                                 <div className="card-body">
                                                     <h3 className="card-title fw-bold">{items.name}</h3>
                                                     <div className='d-flex justify-content-between'>
@@ -163,7 +163,7 @@ const Collections = () => {
 
                         </div>
                     </div>
-                    <div className="col-12">
+                    <div className="col-12 d-none d-lg-block">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination justify-content-center">
                                 <li class="page-item disabled">
@@ -179,7 +179,7 @@ const Collections = () => {
                         </nav>
                     </div>
                     {/* this componet is for mobile screen -- tag on */}
-                    <div className="col-12 d-lg-none d-sm-block">
+                    {/* <div className="col-12 d-lg-none d-sm-block">
                         <div className="row ">
                             <div className="col-6">Top Collection</div>
                             <div className="col-6">
@@ -187,13 +187,13 @@ const Collections = () => {
                                 <button className="btn btn-primary ms-1 blue-button  rounded-circle" type="submit"><i className="fa-solid fa-wallet"></i></button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="col-12 my-5 d-lg-none d-sm-block">
                         <div className="row">
                             {topCollectionssmall && topCollectionssmall?.map((items, key) => (
-                                <div key={key} className="col-4 my-2">
-                                    <div className="card p-2 " >
+                                <div key={key} className="col-4 my-2" >
+                                    <div className="card p-2 " value={items.id} onClick={(e) => { goToNextPage(e.target.value) }} >
                                         <img src={items.image} className="card-img-top img-fluid" alt="..." />
                                         <div className="card-body p-0">
                                             <p className="card-text">{items.name}</p>
